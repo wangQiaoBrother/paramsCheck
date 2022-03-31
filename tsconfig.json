@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
+    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
-    "lib": ["es6"]
+    "moduleResolution": "node",
+    "noUnusedLocals": true, // 未使用变量报错
+    "declarationDir": "./lib/types", // 定义文件输出目录
+    "lib": ["es6", "esnext"]
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]

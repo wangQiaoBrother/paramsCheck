@@ -2,14 +2,16 @@
   "name": "params-filter",
   "description": "校验对象或者数组对象里面的值不能为null或者undefined",
   "version": "1.0.0",
-  "main": "",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
   "files": [
     "lib/**/*"
   ],
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "lint": "tslint -p tsconfig.json",
-    "build": "tsc"
+    "build:tsc": "tsc",
+    "build": "rimraf -fr lib && rollup -c rollup.config.js",
+    "pub": "npm run test && npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,11 +23,18 @@
     "url": "https://github.com/wangQiaoBrother/paramsFilter/issues"
   },
   "homepage": "https://github.com/wangQiaoBrother/paramsFilter#readme",
-  "dependencies": {},
   "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^21.0.3",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-typescript": "^8.3.1",
     "@types/jest": "^27.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
     "jest": "^27.5.1",
+    "rimraf": "^3.0.2",
     "rollup": "^2.70.1",
+    "rollup-plugin-typescript2": "^0.31.2",
     "ts-jest": "^27.1.4",
     "tslint": "^6.1.3",
     "tslint-config-prettier": "^1.18.0",
