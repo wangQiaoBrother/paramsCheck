@@ -26,6 +26,17 @@ test('respondParamsFilter --- 自我重复引用爆栈问题', () => {
   expect(result.a).toEqual(result);
 });
 
+test('respondParamsFilter --- 自我重复引用爆栈问题2', () => {
+  let a: any = { a: null, c: 2, b: null, d: [{ e: undefined }] };
+  a.a = a;
+  a.b = a;
+  const result: any = respondParamsFilter(a);
+  expect(result.a).not.toBeNull();
+  expect(result.d[0].e).toBe('');
+  expect(result.b).toBe(result);
+  expect(result.a).toEqual(result);
+});
+
 test('respondParamsFilter --- { a: 1, b: null }', () => {
   const result2 = respondParamsFilter({ a: 1, b: null });
   expect(result2).toEqual({ a: 1, b: '' });
