@@ -76,4 +76,3 @@ export function respondParamsFilter<T>(x: T, map = new WeakMap()): unknown {
   }
   return root;
 }
-
