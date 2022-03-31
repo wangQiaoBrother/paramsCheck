@@ -1,2 +1,2 @@
-# paramsCheck
+# params-filter
 校验对象或者数组对象里面的值不能为null或者undefined
