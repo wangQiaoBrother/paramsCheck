@@ -1,7 +1,7 @@
 {
   "name": "params-filter",
   "description": "校验对象或者数组对象里面的值不能为null或者undefined",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "files": [
@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "build:tsc": "tsc",
+    "build:tsc": "rimraf -fr lib && tsc",
     "build": "rimraf -fr lib && rollup -c rollup.config.js",
     "pub": "npm run test && npm run build && npm publish"
   },
