@@ -15,7 +15,7 @@ interface Inode {
 * 递归校验对象参数 是否为undefined，null
 * 例：{a:1,c:null}，{a:[{a:1}]}
 */
-export function respondParamsFilter<T>(x: T, map: any = new WeakMap()): unknown {
+export function paramsFilter<T>(x: T, map: any = new WeakMap()): unknown {
   try {
     // 判断是否是 undefined null
     if (isUndef(x)) return '';
