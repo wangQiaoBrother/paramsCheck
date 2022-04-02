@@ -15,16 +15,16 @@
 
 2. 引入
 
-  node模块：const params = require('params-filter')使用：params.paramsFilter('')
+  node模块：const params = require('params-filter')
            const { paramsFilter } = require('params-filter')
 
   es6模块：import { paramsFilter } from 'params-filter'
   
 3. 使用
 
-  require方式：paramsFilter({a: 1, b: 2,c: null})
+  import方式：paramsFilter({a: 1, b: 2,c: null})
 
-  import方式：paramsFilter.paramsFilter({a: 1, b: 2,c: null})
+  require方式：params.paramsFilter({a: 1, b: 2,c: null})或者paramsFilter({a: 1, b: 2,c: null})
 ```
 
 ## 示例
