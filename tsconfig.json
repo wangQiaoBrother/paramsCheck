@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "target": "esnext",
     "module": "esnext",
+    "esModuleInterop": true,
     "declaration": true,
     "outDir": "./lib",
     "strict": true,
