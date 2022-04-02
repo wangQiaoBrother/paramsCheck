@@ -15,7 +15,7 @@
 
 2. 引入
 
-  node模块：const paramsFilter = require('params-filter')
+  node模块：const params = require('params-filter')使用：params.paramsFilter('')
            const { paramsFilter } = require('params-filter')
 
   es6模块：import { paramsFilter } from 'params-filter'
