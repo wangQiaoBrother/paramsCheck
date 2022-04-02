@@ -1,7 +1,7 @@
 {
   "name": "params-filter",
   "description": "多层过滤对象或者数组里面的值不能为null或者undefined",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
   "files": [
