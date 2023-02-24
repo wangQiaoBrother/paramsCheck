@@ -36,5 +36,12 @@
   处理成
   [{ a: '', c: 2, b: '', d: [{ e: '' }] }]
 ```
+
+**强烈推荐福利！！！每天免费领取饿了么，美团外卖红包（买菜，点美食都可以）**
+
+<div align="left">
+  <img src="https://user-images.githubusercontent.com/21699695/221159459-81384c4b-67a0-4616-b885-515965989fa4.png" alt="Editor" width="600">
+</div>
+
 ## LICENSE
 [MIT](https://github.com/liuxing/translator-cli/blob/master/LICENSE)
